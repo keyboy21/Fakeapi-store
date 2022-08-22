@@ -14,9 +14,9 @@ const App = () => {
 
   return (
     <div className="App">
-      {isLoading ? "Loading..."
+      {isLoading ? <LinearProgress />
         : error ? error.message
-        : data.map((product) => (
+          : data.map((product) => (
             <h4 key={product.id}>
               {product.title}: {product.price}
             </h4>
