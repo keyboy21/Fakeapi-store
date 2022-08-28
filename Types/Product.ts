@@ -1,4 +1,5 @@
 export interface ProductType {
+  amount: number;
   id:          number;
   title:       string;
   price:       number;
